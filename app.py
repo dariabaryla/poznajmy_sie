@@ -63,7 +63,7 @@ with col_left:
 
 # Strona główna prawa kolumna
 with col_right:
-    st.image("ankieta.png", use_container_width=True)
+    st.image("Ankieta.png", use_container_width=True)
 
 # Dane
 df = pd.read_csv("35__welcome_survey_cleaned.csv", sep=";")
@@ -76,7 +76,7 @@ with tab1:
     col_stat_left, col_stat_right = st.columns(2)
 
     with col_stat_left:
-        st.image("statystyki.png", use_container_width=True)
+        st.image("Statystyki.png", use_container_width=True)
 
     with col_stat_right:
         st.subheader("10 losowych wierszy")
@@ -90,7 +90,7 @@ with tab2:
     col1, col2 = st.columns([1, 1])
 
     with col1:
-        st.image("kim_jestesmy.png", use_container_width=True)
+        st.image("Kim_jestesmy.png", use_container_width=True)
 
     with col2:
         gender_counts = df['gender'].value_counts()
@@ -137,7 +137,7 @@ with tab3:
     col1, col2 = st.columns([1, 1])
     
     with col1:
-        st.image("zawodowo.png", use_container_width=True)
+        st.image("Zawodowo.png", use_container_width=True)
         
     with col2:
         industry_counts = df['industry'].value_counts()
@@ -199,7 +199,7 @@ with tab4:
     col1, col2 = st.columns([1, 1])
     
     with col1:
-        st.image("prywatnie.png", use_container_width=True)
+        st.image("Prywatnie.png", use_container_width=True)
 
     with col2:
         animals_counts = df['fav_animals'].value_counts()
